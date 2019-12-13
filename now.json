@@ -1,0 +1,34 @@
+{
+  "name": "poster",
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/pinterest/oauth",
+      "dest": "/api/pinterest/oauth.js",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "src": "/api/pinterest/callback",
+      "dest": "/api/pinterest/oauthCallback.js",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "src": "/api/pinterest/pins",
+      "dest": "/api/pinterest/createPin.js",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "src": "/api/pinterest/boards",
+      "dest": "/api/pinterest/createBoard.js",
+      "methods": [
+        "POST"
+      ]
+    }
+  ]
+}
